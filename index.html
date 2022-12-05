@@ -1,137 +1,208 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>FD - FURKAN DENIZ</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="logo_black.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      @media only screen and (max-width: 400px) {h1{font-size: 32px} h2{font-size: 27px} h3{font-size: 22px} h4{font-size: 17px} h5{font-size: 15px}}
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-      .center {
-        margin: 0;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
-      .full-height {
-        height: 100%;
-        margin: 0;
-        padding: 10%;
-      }
-      .content {
-        margin: 0;
-        padding: 5%;
-      }
-      .panel {
-        border-bottom: 1px solid grey;
-        border-left:   1px solid grey;
-        margin: 2px;
-      }
-       .background{
-        color: #55555;
-      }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="show.png">
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
-  <body class="background">
-
-    <div class="full-height">
-      <div class="center">
-        <h1>Hello!</h1>
-        <br><br>
-        <h2>I'm <b>Furkan Deniz</b></h2>
-        <h3>Electrical Electronic Engineer - Game Developer</h3>
-        <hr style="width:100%" class="w3-opacity">
-        <h4>
-          I am a passionate person about developing games and want to create new game ideas, also interested in designing game world and levels. I am working on develop my own games.
-        </h4>
-        <br><br>
-        <h5>Mail me if you are interested at 
-          <a href="mailto:dnzfurkan@outlook.com">dnzfurkan@outlook.com</a>
-        </h5>
-        <br><br>
-        <a href="#contentPage" class="center w3-xxlarge"><i class="fa fa-arrow-circle-down"></i></a>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
       </div>
 
-    </div>
-
-    <div class="content" id="contentPage">
-      <div class="w3-padding-16">
-        <h3>Education</h3>
-        <hr style="width:100%" class="w3-opacity">
-        <div class="w3-container">
-          <h5><b>Konya Technical University</b></h5>
-          <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2019</h6>
-          <p>Electrical Electronic Engineering</p>
-          <hr style="width:100%" class="w3-opacity">
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="logo.png" >
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          
+          
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/frkndnz" target="_blank">
+             <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="mailto:dnzfurkan@outlook.com" target="_blank">
+             <i data-feather="mail"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/furkandeniz1" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
         </div>
-       
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
 
-      <div class="w3-padding-16">
-        <h3 class="w3-text-light-grey">My Skills</h3>
-        <hr style="width:100%" class="w3-opacity">
-        <p class="w3-wide">Programing Languages :</p>
-        <p class="w3-wide">C#, C++, PYTHON</p>
-        <br>
-        <p class="w3-wide">Technologies :</p>
-        <p class="w3-wide">Unity, Android Studio, MatLab </p>
-      </div>
-
-
-      <div class="w3-row-padding w3-center w3-margin-top w3-padding-16">
-        <h3 style="display:flex;align:left;">Works</h3>
-        <hr style="width:100%" class="w3-opacity">
-        <br>
-        <div class="w3-third">
-          <div class="w3-container panel" style="min-height:460px">
-            <h3>Stack Over!</h3>
-            <img src="logo_stackover.png" class="w3-margin-bottom w3-text-theme" style="height:150px;width:150px">
-            <p>Stack block over and over!</p>
-            <p>Stack continuously moving blocks over them. Build the heighst stack.</p>
-            <a href='https://play.google.com/store/apps/details?id=com.kcminigames.StackOver&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img style="height:80px;width:200px" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">ABOUT ME</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            <h1>Furkan Deniz</h2>
+            <h2>Game Developer</h3>
+            <p></p>
           </div>
-        </div>
 
-        <div class="w3-third">
-          <div class="w3-container panel" style="min-height:460px">
-            <h3>Space Shooter</h3>
-            <img src="logo_white.png" class="w3-margin-bottom w3-text-theme" style="height:150px;width:150px">
-            <p>Shoot the asteroids and make the highest score.</p>
-            <a href="https://keremcaliskann.github.io/SpaceShooter"><button class="w3-button w3-white w3-padding-large w3-hover-opacity">Play!</button></a>
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              I am a passionate person about developing games and creating new game ideas.I
+              am always willing and curious to learn by doing research.
+            </p>
+              
           </div>
-        </div>
 
-        <div class="w3-third">
-          <div class="w3-container panel" style="min-height:460px">
-            <h3>Coming Soon...</h3>
-            <img src="logo_white.png" class="w3-margin-bottom w3-text-theme" style="height:150px;width:150px">
-            <p>Working on the project...</p>
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Community Manager at the Company-X</h4>
+                <p>September 2020 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li>
+                  <li>Implemented social media strategies to increase engagement and followers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Y</h4>
+                <p>January 2017 - June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that audience growth rate is in increase through social networs</li>
+                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
+                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Z</h4>
+                <p>January 2014 - April 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Organized and managed community events to boost brand awareness</li>
+                  <li>Monitored, tracked and reported on feedback and online reviews</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>Konya Technical University</h4>
+                <p>2014 - 2019 </p>
+                
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Programming Languages</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>C # ,C++ ,PYTHON</li>
+               
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technologies</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Unity,Android Studio, Matlab</li>
+                 
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love mountain hiking and cycling in my free time</li>
+                  <li>I like to play board games with other people</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Mehmet Şakar, CEO at Lecten</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
           </div>
-        </div>
-      </div>
 
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Furkan Deniz</p>
+              <p>Phone number: +90 5372547425</p>
+              <p>E-mail: dnzfurkan@outlook.com</p>
+            </div>
+          </div>
 
-      <div class="w3-padding-16">
-        <h3 class="w3-text-light-grey">Resume</h3>
-        <hr style="width:100%" class="w3-opacity">
-        <a href="KeremCaliskan_resume.pdf" target="_blank"><button class="w3-button w3-light-grey w3-padding-large w3-section"><i class="fa fa-download"></i> Download Resume </button></a>
-      </div>
-      <footer class="w3-container w3-text-grey w3-xxlarge w3-center w3-padding-64">
-        
-        <a href="https://www.linkedin.com/in/furkandeniz1/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        <a href="https://github.com/frkndnz" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2022 - Furkan Deniz</p>
+          
         <!-- End footer -->
-        <a href="mailto:dnzfurkan@outlook.com" target="_blank"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-      </footer>
-    </div>
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
   </body>
 </html>
