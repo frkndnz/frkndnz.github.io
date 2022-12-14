@@ -33,7 +33,19 @@ body * {
     -webkit-padding: 20px; /*works on Safari and Google Chrome*/
     padding: 20px;
   }
-  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap: 10px 10px;
+  }
+  .grid-item {
+    border: 1px solid #262626;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+  }
+
   .image-section img {
     max-width: 60%;
     max-height: 60%;
@@ -109,8 +121,21 @@ body * {
     bottom: 0;
     left: 0;
   }
+ .game-logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+  }
   
   /*Media queries*/
+ @media screen and (max-width: 1440px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      gap: 10px 10px;
+    }
+  }
   @media screen and (max-width: 1200px) {
     .home {
       width: 90%;
@@ -122,6 +147,12 @@ body * {
     .download-text {
       display: none;
     }
+ .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      gap: 10px 10px;
+    }
   }
   
   @media screen and (max-width: 992px) {
@@ -131,8 +162,28 @@ body * {
     .home h1 {
       font-size: 48px;
     }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 10px;
+      gap: 10px 10px;
+    }
   }
-  
+   @media screen and (max-width: 800px) {
+    .home {
+      width: 100%;
+    }
+    .home h1 {
+      font-size: 48px;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 10px;
+      gap: 10px 10px;
+    }
+  }
   @media screen and (max-width: 600px) {
     .content-container {
       width: 100% !important;
