@@ -109,7 +109,9 @@ body * {
   .w3-margin-top-20-percent {
     margin-top: 20%;
   }
-  
+  .w3-margin-top-10-percent {
+    margin-top: 10%;
+  }
   .w3-sticky {
     position: -webkit-sticky;
     position: sticky;
