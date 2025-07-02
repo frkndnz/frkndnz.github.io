@@ -7,3 +7,37 @@
 }
 
 
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1); /* Başlangıçta görünür ve orijinal boyutta */
+    opacity: 0.7; /* Hafif şeffaflık */
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.15); /* Hafif büyüme ve yukarı-sağa hareket */
+    opacity: 0.8;
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9); /* Hafif küçülme ve aşağı-sola hareket */
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1); /* Başlangıç konumuna ve boyutuna geri dönüş */
+    opacity: 0.7;
+  }
+}
+
+/* Animasyon gecikmeleri için özel utility sınıfları */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* animate-blob utility sınıfını @layer utilities içinde tanımlıyoruz */
+@layer utilities { /* @layer components yerine utilities katmanı daha uygun olabilir */
+  .animate-blob {
+    animation: blob 8s infinite ease-in-out; /* Süreyi uzattık (8s) ve ease-in-out ile daha yumuşak geçiş sağladık */
+  }
+}
