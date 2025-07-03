@@ -13,9 +13,12 @@
     "@react-three/drei": "^10.4.2",
     "@react-three/fiber": "^9.1.4",
     "@tailwindcss/vite": "^4.1.11",
+    "framer-motion": "^12.23.0",
     "lucide-react": "^0.525.0",
+    "motion": "^12.23.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-simple-typewriter": "^5.0.1",
     "tailwindcss": "^4.1.11",
     "three": "^0.178.0"
   },

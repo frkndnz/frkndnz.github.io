@@ -5,7 +5,8 @@ import { Experience } from './pages/Experience';
 import { Contact } from './pages/Contact';
 import HeroSection from './pages/HeroSection';
 import Navbar from './components/Navbar';
-
+import { Education } from './pages/Education';
+import BackToTopButton from './components/BackToTopButton';
 
 
 
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
 
-      <div className="bg-gradient-to-br from-gray-800 to-blue-950 min-h-screen text-gray-900">
+      <div className="bg-gradient-to-br from-gray-950 to-gray-800 min-h-screen text-gray-900">
         {/* Navbar */}
         
         <Navbar scrollToSection={scrollToSection} />
@@ -30,6 +31,7 @@ function App() {
           <About />
           <Projects />
           <Experience />
+          <Education/>
           <Contact />
         </main>
 
@@ -38,7 +40,7 @@ function App() {
           © 2025 Furkan Deniz - Tüm hakları saklıdır.
         </footer>
       </div>
-
+      <BackToTopButton />
     </>
   )
 }

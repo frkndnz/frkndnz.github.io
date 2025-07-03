@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 const sections = [
-  { id: "hero", label: "Ana Sayfa" },
-  { id: "about", label: "Hakkımda" },
-  { id: "projects", label: "Projeler" },
-  { id: "experience", label: "Deneyim" },
-  { id: "contact", label: "İletişim" },
+  { id: "hero", label: "Me" },
+  { id: "about", label: "About" },
+  { id: "projects", label: "Projects" },
+  { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "contact", label: "Contact" }
 ];
 
 const Navbar = ({ scrollToSection }) => {
@@ -35,20 +36,19 @@ const Navbar = ({ scrollToSection }) => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all rounded-b-sm duration-300 ${
-        isScrolled
-          ? 'bg-white opacity-95 shadow-lg py-2' // Kaydırıldığında daha belirgin
-          : 'bg-white opacity-90 py-3' // Başlangıçta hafif şeffaf
-      } backdrop-blur-sm `}
+      className={`fixed w-full  z-50 transition-all rounded-b-sm duration-300 ${isScrolled
+          ? 'bg-gray-900 opacity-100  py-2' // Kaydırıldığında daha belirgin
+          : ' opacity-90 py-3' // Başlangıçta hafif şeffaf
+        } `}
     >
-      <div className="container mx-auto px-6 md:px-8 flex justify-between items-center">
+      <div className="container max-w-6xl mx-auto  px-6 md:px-10  flex justify-between items-center">
         {/* Logo veya İsim */}
         <div className="flex-shrink-0">
           <button
             onClick={() => handleNavLinkClick("hero")}
-            className="text-xl sm:text-3xl font-extrabold text-indigo-700 hover:text-indigo-900 cursor-pointer transition-colors duration-300 tracking-tight"
+            className="text-xl sm:text-3xl font-bold text-white hover:text-teal-300 cursor-pointer transition-colors duration-300 tracking-tight"
           >
-            Furkan Deniz
+            Furkan
           </button>
         </div>
 
@@ -58,11 +58,11 @@ const Navbar = ({ scrollToSection }) => {
             <button
               key={id}
               onClick={() => handleNavLinkClick(id)}
-              className="relative text-lg font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-300 px-2 py-1 group"
+              className="relative text-lg font-medium text-white hover:text-teal-300 transition-colors duration-300 cursor-pointer px-2 py-1 group"
             >
               {label}
               {/* Alt çizgi efekti */}
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
           ))}
         </div>
